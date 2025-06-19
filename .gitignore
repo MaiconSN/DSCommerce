@@ -65,4 +65,8 @@ node_modules/
 
 # VS Code e outros editores
 .vscode/
+<<<<<<< HEAD
 *.code-workspace
+=======
+*.code-workspace
+>>>>>>> 530e1d96f42368842baa6346c159f1e2e1eba074
