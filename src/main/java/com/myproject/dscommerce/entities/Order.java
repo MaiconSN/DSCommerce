@@ -99,7 +99,7 @@ public class Order {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(client, id, moment, status);
+		return Objects.hash(id);
 	}
 
 	@Override
@@ -111,8 +111,9 @@ public class Order {
 		if (getClass() != obj.getClass())
 			return false;
 		Order other = (Order) obj;
-		return Objects.equals(client, other.client) && Objects.equals(id, other.id)
-				&& Objects.equals(moment, other.moment) && status == other.status;
+		return Objects.equals(id, other.id);
 	}
+
+	
 
 }
