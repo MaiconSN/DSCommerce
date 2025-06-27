@@ -1,5 +1,9 @@
 package com.myproject.dscommerce.dto;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.myproject.dscommerce.entities.Product;
 
 import jakarta.validation.constraints.NotBlank;
@@ -22,6 +26,9 @@ public class ProductDTO {
 	private Double price;
 	private String imgUrl;
 	
+	@JsonInclude(JsonInclude.Include.NON_EMPTY)
+	private List<CategoryDTO> categories = new ArrayList<>();
+	
 	public ProductDTO() {
 		
 	}
@@ -40,6 +47,7 @@ public class ProductDTO {
 		this.description = entity.getDescription();
 		this.price = entity.getPrice();
 		this.imgUrl = entity.getImgUrl();
+		this.categories = entity.getCategories().stream().map(x -> new CategoryDTO(x)).toList();
 	}
 
 	public Long getId() {
@@ -61,6 +69,12 @@ public class ProductDTO {
 	public String getImgUrl() {
 		return imgUrl;
 	}
+
+	public List<CategoryDTO> getCategories() {
+		return categories;
+	}
+	
+	
 	
 	
 }
