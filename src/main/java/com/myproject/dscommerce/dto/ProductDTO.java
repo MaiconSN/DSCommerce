@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.myproject.dscommerce.entities.Product;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
 import jakarta.validation.constraints.Size;
 
@@ -26,6 +27,7 @@ public class ProductDTO {
 	private Double price;
 	private String imgUrl;
 	
+	@NotEmpty(message = "Deve ter pelo menos uma categoria")
 	@JsonInclude(JsonInclude.Include.NON_EMPTY)
 	private List<CategoryDTO> categories = new ArrayList<>();
 	
