@@ -48,6 +48,10 @@ public class Order {
 		this.client = client;
 		this.payment = payment;
 	}
+	
+	public Order() {
+
+	}
 
 	public Long getId() {
 		return id;
