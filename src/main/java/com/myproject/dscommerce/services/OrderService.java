@@ -22,10 +22,10 @@ import com.myproject.dscommerce.services.exceptions.ResourceNotFoundException;
 public class OrderService {
 
 	@Autowired
-	private OrderRepository repository;
+	private OrderRepository orderRepository;
 	
 	@Autowired
-	private UserService service;
+	private UserService userService;
 	
 	@Autowired
 	private ProductRepository productRepository;
@@ -36,7 +36,7 @@ public class OrderService {
 	@Transactional(readOnly = true)
 	public OrderDTO findById(Long id) {
 
-		Order order = repository.findById(id).orElseThrow(
+		Order order = orderRepository.findById(id).orElseThrow(
 				() -> new ResourceNotFoundException("Recurso não encontrado"));
 		return new OrderDTO(order);
 
@@ -49,7 +49,7 @@ public class OrderService {
 		order.setMoment(Instant.now());
 		order.setStatus(OrderStatus.WAITING_PAYMENT);
 		
-		User user = service.authenticated();
+		User user = userService.authenticated();
 		order.setClient(user);
 		
 		for(OrderItemDTO itemDto : dto.getItems()) {
@@ -58,7 +58,7 @@ public class OrderService {
 			order.getItems().add(item);
 		}
 		
-		repository.save(order);
+		orderRepository.save(order);
 		orderItemRepository.saveAll(order.getItems());
 		
 		return new OrderDTO(order);
