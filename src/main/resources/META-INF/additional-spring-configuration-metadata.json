@@ -18,5 +18,50 @@
     "name": "cors.origins",
     "type": "java.lang.String",
     "description": "A description for 'cors.origins'"
+  },
+  {
+    "name": "\nspring.profiles.activ",
+    "type": "java.lang.String",
+    "description": "A description for '\nspring.profiles.activ'"
+  },
+  {
+    "name": "\r\nspring.datasource.u",
+    "type": "java.lang.String",
+    "description": "A description for '\r\nspring.datasource.u'"
+  },
+  {
+    "name": "A\r\nspring.jpa.database-platf",
+    "type": "java.lang.String",
+    "description": "A description for 'A\r\nspring.jpa.database-platf'"
+  },
+  {
+    "name": "t\r\nspring.jpa.hibernate.ddl-a",
+    "type": "java.lang.String",
+    "description": "A description for 't\r\nspring.jpa.hibernate.ddl-a'"
+  },
+  {
+    "name": "l)\r\nspring.jpa.show",
+    "type": "java.lang.String",
+    "description": "A description for 'l)\r\nspring.jpa.show'"
+  },
+  {
+    "name": "e\r\nspring.jpa.properties.hibernate.jdbc.lob.non_contextual_creat",
+    "type": "java.lang.String",
+    "description": "A description for 'e\r\nspring.jpa.properties.hibernate.jdbc.lob.non_contextual_creat'"
+  },
+  {
+    "name": "ue\r\nspring.jpa.properties.hibernate.format",
+    "type": "java.lang.String",
+    "description": "A description for 'ue\r\nspring.jpa.properties.hibernate.format'"
+  },
+  {
+    "name": "BUG\r\nlogging.level.org.hibernate.type.descriptor.sql.BasicB",
+    "type": "java.lang.String",
+    "description": "A description for 'BUG\r\nlogging.level.org.hibernate.type.descriptor.sql.BasicB'"
+  },
+  {
+    "name": "ug)\r\nlogging.level.org.hibernat",
+    "type": "java.lang.String",
+    "description": "A description for 'ug)\r\nlogging.level.org.hibernat'"
   }
 ]}
