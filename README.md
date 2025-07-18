@@ -38,6 +38,7 @@ Um pedido deve ser representado por um objeto conforme projeto abaixo:<br>
 - <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original-wordmark.svg" title = "Spring Data JPA"/>  Spring Data JPA: Exploraremos como essa ferramenta pode simplificar nossa camada de acesso aos dados, facilitando a integração com bancos de dados SQL;
 - <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" title = "H2 Database"/> H2 Database: Banco de dados SQL em memória.
 - <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain-wordmark.svg" /> Postman: Para testar os métodos http do controller.
+- <img width="100px" src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/maven/maven-original-wordmark.svg" /> Maven: Versão 4.0.0.
 
 ## 1. Premissas
 Deseja-se fazer um sistema para ser utilizado em cursos da Devsuperior no processo de aprendizado dos alunos. Para isto, a concepção do sistema partiu das seguintes
