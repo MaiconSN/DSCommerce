@@ -39,7 +39,7 @@ Um pedido deve ser representado por um objeto conforme projeto abaixo:<br>
 - <img width="50px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqldeveloper/sqldeveloper-original.svg" title = "H2 Database"/> H2 Database: Banco de dados SQL em memória.
 - <img width="100px" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain-wordmark.svg" /> Postman: Para testar os métodos http do controller.
 
-- ## 1. Premissas
+## 1. Premissas
 Deseja-se fazer um sistema para ser utilizado em cursos da Devsuperior no processo de aprendizado dos alunos. Para isto, a concepção do sistema partiu das seguintes
 premissas:
 - Deve ser um sistema que possua um modelo de domínio relativamente simples, porém abrangente, ou seja, que explore vários tipos de relacionamentos entre as
